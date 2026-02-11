@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Native Software Engineering | AINSE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background Grid -->
+    <div class="grid-background"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">AINSE</span>
+                <span class="logo-bracket">]</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#what-is">What is AINSE</a></li>
+                <li><a href="#problem">The Problem</a></li>
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#sdlc">SDLC</a></li>
+                <li><a href="#strategy">Strategy</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Slide 1 -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-label">EMERGING TECHNOLOGY BRIEFING</div>
+            <h1 class="hero-title">
+                AI Native Software<br>
+                <span class="gradient-text">Engineering</span>
+                <span class="hero-subtitle-inline">(AINSE)</span>
+            </h1>
+            <p class="hero-subtitle">What changes when AI starts developing softwares?</p>
+            <div class="hero-meta">
+                <span class="meta-item">Presented by: Sahil Dua, Sunayana Hazarika</span>
+            </div>
+            <div class="hero-cta">
+                <a href="#what-is" class="btn btn-primary">Explore AINSE</a>
+                <a href="#problem" class="btn btn-secondary">The Business Case</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="window-header">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="window-title">ai_agent.py</span>
+                </div>
+                <div class="window-content">
+                    <pre><code><span class="keyword">def</span> <span class="function">autonomous_develop</span>():
+    <span class="comment"># AI writes software</span>
+    requirements = <span class="function">parse_natural_language</span>()
+    architecture = <span class="function">design_system</span>(requirements)
+    code = <span class="function">generate_production_code</span>(architecture)
+    tests = <span class="function">create_test_suite</span>(code)
+    
+    <span class="keyword">return</span> <span class="function">deploy</span>(code, tests)</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is AINSE Section - Slide 2 & 3 -->
+    <section id="what-is" class="section what-is">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">What is AINSE?</h2>
+            </div>
+            
+            <div class="what-is-content">
+                <div class="intro-main">
+                    <div class="intro-label">AI IN DEVELOPMENT</div>
+                    <p class="lead-text">We are entering an era where software writes software.</p>
+                    <p class="intro-description">
+                        AI-Native Software Engineering (AINSE) represents a fundamental shift in how software is created. 
+                        Unlike traditional development tools that assist human developers, AINSE enables autonomous or 
+                        semi-autonomous execution of software engineering tasks by AI agents integrated throughout the 
+                        Software Development Life Cycle (SDLC).
+                    </p>
+                </div>
+                
+                <div class="qr-section">
+                    <div class="qr-placeholder">
+                        <div class="qr-icon">📱</div>
+                        <p class="qr-text">Scan the QR Code<br>for the executive brief</p>
+                        <div class="qr-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Problem Section - Slide 4 (MOVED EARLIER) -->
+    <section id="problem" class="section business-problem">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">The Business Problem</h2>
+            </div>
+            
+            <div class="problem-grid">
+                <div class="problem-card pressure">
+                    <div class="card-label">THE PRESSURE</div>
+                    <h3>Release faster with fewer engineers</h3>
+                    <div class="stat-box">
+                        <div class="stat-large">79%</div>
+                        <p class="stat-caption">report software release missing timelines</p>
+                        <p class="stat-source">Industry reality (Forrester 2024)</p>
+                    </div>
+                </div>
+                
+                <div class="problem-card reality">
+                    <div class="card-label">THE REALITY</div>
+                    <h3>Speed gains offset by rework, defects, and security risk</h3>
+                    <p class="reality-text">GenAI copilots increase output, but code duplication and maintainability rise risk</p>
+                    <p class="reality-source">(McKinsey research)</p>
+                </div>
+            </div>
+            
+            <div class="risk-callout">
+                <h3>The Real Risk Isn't Bad Code — It's Ungoverned Decisions</h3>
+                <p class="risk-intro">When GenAI shifts from suggesting to deciding:</p>
+                <div class="risk-grid">
+                    <div class="risk-item">
+                        <div class="risk-icon">⚠️</div>
+                        <strong>Control shifts</strong>
+                        <p>From human approvals → policy + automation</p>
+                    </div>
+                    <div class="risk-item">
+                        <div class="risk-icon">❓</div>
+                        <strong>Accountability blurs</strong>
+                        <p>Who owns an AI-made decision?</p>
+                    </div>
+                    <div class="risk-item">
+                        <div class="risk-icon">🔁</div>
+                        <strong>Errors compound</strong>
+                        <p>One agent's output feeds another</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications Section - Slide 5 -->
+    <section id="applications" class="section applications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">AI Applications Across Development</h2>
+            </div>
+            <div class="applications-grid">
+                <div class="app-card">
+                    <div class="app-header">
+                        <span class="app-icon">💻</span>
+                        <h3>Code Generation</h3>
+                    </div>
+                    <p>Autocompletion and synthesis from natural language descriptions</p>
+                </div>
+                <div class="app-card">
+                    <div class="app-header">
+                        <span class="app-icon">🐛</span>
+                        <h3>Bug Detection</h3>
+                    </div>
+                    <p>Automated analysis and real-time correction suggestions</p>
+                </div>
+                <div class="app-card">
+                    <div class="app-header">
+                        <span class="app-icon">🧪</span>
+                        <h3>Testing Automation</h3>
+                    </div>
+                    <p>Intelligent test case generation and optimization</p>
+                </div>
+                <div class="app-card">
+                    <div class="app-header">
+                        <span class="app-icon">📚</span>
+                        <h3>Documentation</h3>
+                    </div>
+                    <p>Auto-generated API guides and code explanations</p>
+                </div>
+                <div class="app-card">
+                    <div class="app-header">
+                        <span class="app-icon">🏗️</span>
+                        <h3>Architecture Design</h3>
+                    </div>
+                    <p>Optimal system designs based on requirements</p>
+                </div>
+                <div class="app-card">
+                    <div class="app-header">
+                        <span class="app-icon">🔒</span>
+                        <h3>Security Enhancement</h3>
+                    </div>
+                    <p>Vulnerability identification and mitigation strategies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SDLC Section - Slide 6 -->
+    <section id="sdlc" class="section sdlc">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">AI Transforming the SDLC</h2>
+            </div>
+            <div class="sdlc-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">1</div>
+                    <div class="timeline-content">
+                        <h3>Requirements</h3>
+                        <p>Natural language processing converts ideas to specifications</p>
+                    </div>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">2</div>
+                    <div class="timeline-content">
+                        <h3>Design</h3>
+                        <p>Architecture suggestions and UI mockups generated instantly</p>
+                    </div>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">3</div>
+                    <div class="timeline-content">
+                        <h3>Development</h3>
+                        <p>Code generation and real-time assistance accelerates coding</p>
+                    </div>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">4</div>
+                    <div class="timeline-content">
+                        <h3>Testing</h3>
+                        <p>Automated test generation improves coverage and quality</p>
+                    </div>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">5</div>
+                    <div class="timeline-content">
+                        <h3>Deployment</h3>
+                        <p>CI/CD optimization predicts failures and reduces downtime</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategy Section - Slide 7 -->
+    <section id="strategy" class="section strategy">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Strategic Recommendation</h2>
+            </div>
+            
+            <div class="strategy-highlight">
+                <p class="key-insight">The biggest ROI isn't "coding faster." It's reducing the hidden tax of rework + reliability + security debt created when autonomous systems operate without proper governance.</p>
+            </div>
+
+            <div class="recommendations-grid">
+                <div class="recommendation-card">
+                    <div class="rec-icon">⚖️</div>
+                    <h3>Bias Mitigation</h3>
+                    <p>Use diverse training data and conduct regular fairness audits to prevent discriminatory outcomes</p>
+                </div>
+                <div class="recommendation-card">
+                    <div class="rec-icon">👁️</div>
+                    <h3>Human Oversight</h3>
+                    <p>Maintain manual coding skills and conduct security reviews of AI-generated code</p>
+                </div>
+                <div class="recommendation-card">
+                    <div class="rec-icon">📋</div>
+                    <h3>Transparency</h3>
+                    <p>Apply interpretable models and clear documentation protocols for accountability</p>
+                </div>
+                <div class="recommendation-card">
+                    <div class="rec-icon">🎓</div>
+                    <h3>Workforce Development</h3>
+                    <p>Invest in reskilling programs to transition roles toward AI collaboration and oversight</p>
+                </div>
+            </div>
+
+            <div class="implementation-path">
+                <h3>Implementation Approach</h3>
+                <div class="path-steps">
+                    <div class="path-step">
+                        <div class="step-label">PILOT</div>
+                        <p>AI TRiSM with Decision Gate</p>
+                    </div>
+                    <div class="path-arrow">→</div>
+                    <div class="path-step">
+                        <div class="step-label">SCALE</div>
+                        <p>Governed Autonomy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developer Role Section - Slide 8 -->
+    <section class="section developer-role">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">06</span>
+                <h2 class="section-title">The Evolving Role of a Developer</h2>
+            </div>
+            <div class="role-content">
+                <div class="role-transformation">
+                    <div class="role-from">
+                        <h3>From Coder</h3>
+                        <p>Writing every line of code manually</p>
+                    </div>
+                    <div class="role-arrow">
+                        <svg width="60" height="60" viewBox="0 0 60 60">
+                            <path d="M10 30 L50 30 M40 20 L50 30 L40 40" stroke="currentColor" stroke-width="3" fill="none"/>
+                        </svg>
+                    </div>
+                    <div class="role-to">
+                        <h3>To Orchestrator</h3>
+                        <p>Defining direction, setting constraints, and enforcing quality gates</p>
+                    </div>
+                </div>
+
+                <div class="role-description">
+                    <p class="role-explanation">
+                        AI enables developers to co-create, shifting their role from writing every line of code to 
+                        orchestrating intelligent agents - defining direction, setting constraints, and enforcing quality 
+                        gates while agents handle execution.
+                    </p>
+                </div>
+
+                <div class="new-responsibilities">
+                    <h3>New Responsibilities</h3>
+                    <ul class="responsibility-list">
+                        <li>Guiding AI-generated outputs and ensuring quality</li>
+                        <li>Managing AI integration across development workflows</li>
+                        <li>Refining technical requirements and specifications</li>
+                        <li>Overseeing system architecture and integration</li>
+                        <li>Strategic decision-making and optimization</li>
+                    </ul>
+                </div>
+
+                <div class="role-quote">
+                    "AI-native engineering is inevitable. Un-governed autonomy is optional."
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section - Slide 9 -->
+    <section id="benefits" class="section benefits">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">07</span>
+                <h2 class="section-title">Key Benefits</h2>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Automation</h3>
+                    <p>AI automates repetitive work allowing developers to focus on higher-value design and decisions.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Improved Quality</h3>
+                    <p>Early bug detection, comprehensive testing coverage, and optimized code reduce vulnerabilities and errors.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚀</div>
+                    <h3>Accelerated Delivery</h3>
+                    <p>Faster development cycles, quicker time-to-market, and rapid iteration based on accurate predictions.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌐</div>
+                    <h3>Democratization</h3>
+                    <p>No-code/low-code platforms enable non-technical users to build AI-powered applications with ease.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thank You Section - Slide 10 -->
+    <section class="section thank-you">
+        <div class="container">
+            <div class="thank-you-content">
+                <h2 class="thank-you-title">Thank You!</h2>
+                <div class="thank-you-details">
+                    <p class="presenters">Sahil Dua & Sunayana Hazarika</p>
+                    <p class="tagline">AI-Native Software Engineering</p>
+                </div>
+                <div class="thank-you-cta">
+                    <a href="#what-is" class="btn btn-secondary">Review Presentation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-bracket">[</span>
+                        <span class="logo-text">AINSE</span>
+                        <span class="logo-bracket">]</span>
+                    </div>
+                    <p>AI-Native Software Engineering</p>
+                </div>
+                <div class="footer-credit">
+                    <p>Presented by Sahil Dua & Sunayana Hazarika</p>
+                    <p class="footer-year">2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
